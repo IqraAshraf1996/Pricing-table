@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Pricing Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: 'Sono', sans-serif;
+  }
+
+  /* Hint: What can you do with a media query and flexbox? */
+  @media (max-width: 1250px) {
+    
+  }
+  .pricing-container
+  {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    height:100vh ;
+    background-color: lightgreen;
+  }
+  .pricing-plan
+  {
+    flex: 1;
+    max-width: 400px;
+    padding: 10px;
+    background-color: darkgreen;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .plan-title
+  {
+    font-weight: bold;
+    font-size: 2rem ;
+
+  }
+  .plan-price
+  {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 10px;
+
+  }
+  .plan-features
+  {
+    list-style: circle;
+  }
+  .plan-button
+  {
+    background-color: chocolate;
+    color: white;
+  }
+  
+    </style>
+  </head>
+  
+  <body>
+    <div class="pricing-container">
+      <div class="pricing-plan">
+        <div class="plan-title">Basic</div>
+        <div class="plan-price"> <h1>500RS</h1></div>
+        <ul class="plan-features">
+          <li>C programming basic</li>
+          <li>Algorithms in c</li>
+          <li>Data structure in c</li>
+          <li>All level programs</li>
+        </ul>
+        <button class="plan-button">Buy now</a>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Standard</div>
+        <div class="plan-price"> <P><h1>1000RS</h1> </div>
+        <ul class="plan-features">
+          <li>C programming basic</li>
+          <li>Algorithms in c</li>
+          <li>Data structure in c</li>
+          <li>All level programs</li>
+        </ul>
+        <button class="plan-button">Buy now</a>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Premium</div>
+        <div class="plan-price"> <h1>1200RS</h1></div>
+        <ul class="plan-features">
+          <li>C programming basic</li>
+          <li>Algorithms in c</li>
+          <li>Data structure in c</li>
+          <li>All level programs</li>
+        </ul>
+        <button class="plan-button">Buy now</a>
+      </div>
+    </div>
+</body>
+</html>
